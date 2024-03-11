@@ -7,4 +7,17 @@ class Program
         
         Console.WriteLine("Hello, World!");
     }
+    
+    public static int CountAverage(int[] tab)
+    {
+        int sum = 0;
+        int length = tab.Length;
+        foreach (int num in tab)
+        {
+            sum += num;
+        }
+
+        return sum / length;
+    }
+
 }
